@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tshwane University of Technology</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <style>
+            .textfield,select{
+                padding: 10px;
+            }
+            .textfield{
+                width: 30px;
+            }
+
+            .btn,.btn1{
+                padding: 10px;
+                border: none;
+                background-color: rgb(250,230,100);
+                cursor: pointer;
+                box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+                font-size: 15px;
+                transition: 0.5s;
+            }
+            .btn1{
+                background-color: rgb(200,230,100);
+                margin-top: 2rem;
+            }
+            .btn1:hover{
+                background-color: rgb(200,230,200);
+                transition: 0.5s;
+            }
+            .btn:hover{
+                background-color: red;
+                transition: 0.5s;
+            }
+
+            label{
+                font-family: sans-serif;
+                font-size: 17px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div><h1>Tshwane University of Technology Admission Qualifier Checker(#MVC Activity 3)</h1></div>
+
+
+
+        <form action="SubjectServlet" method="POST">
+            <div>
+
+                <table>
+
+                    <tr>
+
+                        <td><label>Choose Subject</label></td>
+                        <td>
+                            <select name="subject">
+                                <option value="Afrikaans">Afrikaans</option>
+                                <option value="English">English</option>
+                                <option value="IsiNdebele">IsiNdebele</option>
+                                <option value="IsiXhosa">IsiXhosa</option>
+                                <option value="IsiZulu">IsiZulu</option>
+                                <option value="Sepedi">Sepedi</option>
+                                <option value="Sesotho">Sesotho</option>
+                                <option value="Setswana">Setswana</option>
+                                <option value="SiSwati">SiSwati</option>
+                                <option value="Tshivenda">Tshivenda</option>
+                                <option value="Xitsonga">Xitsonga</option>
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="Mathematical Literacy">Mathematical Literacy</option>
+                                <option value="Physical Science">Physical Science</option>
+                                <option value="Life Sciences">Life Sciences</option>
+                                <option value="Accounting">Accounting</option>
+                                <option value="Business Studies">Business Studies</option>
+                                <option value="Economics">Economics</option>
+                                <option value="Geography">Geography</option>
+                                <option value="History">History</option>
+                                <option value="Computer Applications Technology">Computer Applications Technology</option>
+                                <option value="Information Technology">Information Technology</option>
+                                <option value="Engineering Graphics and Design">Engineering Graphics and Design</option>
+                                <option value="Religion Studies">Religion Studies</option>
+                                <option value="Dramatic Arts">Dramatic Arts</option>
+                                <option value="Music">Music</option>
+                                <option value="Visual Arts">Visual Arts</option>
+                            </select>
+
+                        </td>  
+
+                    </tr> 
+
+
+          
+
+
+                    <tr> 
+
+                        <td><label>Level</label></td>
+                        <td><input type="text" name="level" class="textfield"></td> 
+
+                    </tr>
+
+
+                    <tr> 
+
+                        <td></td>
+                        <td><input type="submit" value="Add Subject"  name="button" class="btn"></td> 
+
+                    </tr>
+
+
+                    <tr> 
+
+
+                        <td><input type="submit" value="Check Admission Status" name="button" class="btn1"></td>
+                        <td></td>
+
+                    </tr>
+
+
+                </table>
+
+            </div>
+
+
+
+        </form>
+
+    </body>
+</html>
